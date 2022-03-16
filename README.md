@@ -21,3 +21,4 @@ In TypeScript
       render() //render
       requestAnimationFrame(callback) //call self in next frame
     }
+    callback()
