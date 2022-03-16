@@ -1,5 +1,5 @@
 # sakuraFx-typescript
-Based WebGL animation
+Animation based on WebGL.
 
 It is [Sakura](https://codepen.io/wikyware-net/details/poRgJge) for TypeScript version.  
 fork from [gryng02](https://qiita.com/gryng02)
