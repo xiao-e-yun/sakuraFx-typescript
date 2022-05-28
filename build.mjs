@@ -19,5 +19,5 @@ await esbuild.build({
     ".vs": "text",
   },
   target: "esnext",
-  platform: "node",
+  platform: "neutral",
 })
