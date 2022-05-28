@@ -4,6 +4,8 @@ Animation based on WebGL.
 It is [Sakura](https://codepen.io/wikyware-net/details/poRgJge) for TypeScript version.  
 fork from [gryng02](https://qiita.com/gryng02)
 
+Install `pnpm add -D sakurafx-typescript`
+
 In html
 
     <canvas id="sakura"></canvas>
@@ -11,7 +13,7 @@ In html
 In TypeScript
 
     //import
-    import sakura from ./sakura;
+    import sakura from "sakurafx-typescript";
     
     //get canvas
     const canvas = document.getElementById("sakura")
