@@ -13,7 +13,7 @@
     "esModuleInterop": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outFile": "./dist/index.d.ts",
+    "outDir": "./dist",
   },
   "include": ["./src/**/*.ts"]
 }
