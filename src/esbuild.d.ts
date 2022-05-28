@@ -1,8 +1,8 @@
-const string = String.toString()
-
 declare module "*.vs" {
-  export = string;
+  const content: string;
+  export = content;
 }
 declare module "*.fs" {
-  export = string;
+  const content: string;
+  export = content;
 }

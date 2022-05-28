@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "sakuraFx",
   "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "typescript": "^4.7.2"
   },
   "scripts": {
     "dev": "node build.mjs dev",
-    "build": "node build.mjs build"
+    "build": "node build.mjs build & tsc"
   },
   "repository": {
     "type": "git",
