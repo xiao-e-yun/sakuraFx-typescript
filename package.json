@@ -1,0 +1,32 @@
+{
+  "name": "sakurafx-typescript",
+  "version": "1.0.0",
+  "description": "sakuraFx",
+  "main": "dist/index.js",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  },
+  "scripts": {
+    "dev": "node build.mjs dev",
+    "build": "node build.mjs build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiao-e-yun/sakuraFx-typescript.git"
+  },
+  "keywords": [
+    "effect",
+    "webGL",
+    "typescript",
+    "sakura"
+  ],
+  "author": "xiao-e-yun",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/xiao-e-yun/sakuraFx-typescript/issues"
+  },
+  "homepage": "https://github.com/xiao-e-yun/sakuraFx-typescript#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.41"
+  }
+}

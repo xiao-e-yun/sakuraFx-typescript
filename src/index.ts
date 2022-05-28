@@ -1,19 +1,19 @@
 import { Vector3, Matrix44, Vec3 } from "./webgl"
 
-import pointVs from "./point.vs?raw" //點花頂點程式
-import pointFs from "./point.fs?raw" //點花像素程式
+import pointVs from "./renderer/point.vs" //點花頂點程式
+import pointFs from "./renderer/point.fs" //點花像素程式
 
-import finalVs from "./final.vs?raw" //最後頂點程式
-import finalFs from "./final.fs?raw" //最後像素程式
+import finalVs from "./renderer/final.vs" //最後頂點程式
+import finalFs from "./renderer/final.fs" //最後像素程式
 
-import commonVs from "./common.vs?raw" //共用頂點程式
-import brightbufFs from "./brightbuf.fs?raw" //亮緩衝區像素程式
-import dirblurFs from "./dirblur.fs?raw" //模糊像素程式
+import commonVs from "./renderer/common.vs" //共用頂點程式
+import brightbufFs from "./renderer/brightbuf.fs" //亮緩衝區像素程式
+import dirblurFs from "./renderer/dirblur.fs" //模糊像素程式
 
 export default function (canvas: HTMLCanvasElement): (()=>void) | undefined {
   console.debug("[sakura] 分叉 gryng02 的 \"SAKURA\"")
   console.debug("[sakura] TypeScript 版本來自 xiaoeyun")
-
+  
   try { gl = canvas.getContext("webgl") as WebGLRenderingContext } //創建一個webgl上下文
   catch { return console.error("[sakura] WebGL not supported") as undefined } //如果不支持webgl，則提示錯誤 
 
