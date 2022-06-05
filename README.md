@@ -17,6 +17,11 @@ In TypeScript
     
     //get canvas
     const canvas = document.getElementById("sakura")
+    
+    //set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
     //initialization and get render
     const render = sakura(canvas)
     
