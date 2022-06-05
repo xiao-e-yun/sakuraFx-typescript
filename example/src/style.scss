@@ -1,0 +1,65 @@
+body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+}
+
+#sakura {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.title {
+  z-index: 1;
+  color: rgb(255, 190, 190);
+  text-decoration: none;
+  position: fixed;
+  margin: 0;
+  left: 1em;
+  top: 1em;
+  text-shadow: 0 0 0.5em rgb(255, 190, 190);
+  
+  & > small {
+    font-size: 0.5em;
+  }
+}
+
+main {
+  min-height: 100vh;
+  margin: auto;
+  width: min-content;
+  max-width: 95vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  margin: 1em;
+  width: 100%;
+  padding: 1em;
+  overflow: hidden;
+  background-color: rgba(50,50,50,.8);
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(255,255,255,.2);
+  backdrop-filter: blur(5px);
+  
+  & > h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(255, 190, 190);
+    text-shadow: 0 0 1em rgba(255,190,190,.8);
+  }
+  
+  & > code {
+    color: #fff;
+    text-shadow: 0 0 .5em rgba(255,255,255,.3);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}

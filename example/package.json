@@ -1,14 +1,16 @@
 {
-  "name": "vite-project",
+  "name": "sakurafx-typescript",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "sakurafx-typescript": "^1.0.2",
+    "sakurafx-typescript": "^1.0.3",
+    "sass": "^1.52.2",
+    "typescript": "^4.7.3",
     "vite": "^2.9.9"
   }
 }
