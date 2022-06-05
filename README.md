@@ -14,15 +14,23 @@ In TypeScript
 
     //import
     import sakura from "sakurafx-typescript";
-    
+
     //get canvas
-    const canvas = document.getElementById("sakura")
+    const canvas = document.getElementById("sakura") as HTMLCanvasElement
+
+    //set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
     //initialization and get render
-    const render = sakura(canvas)
-    
-    //creat animation callback
-    function callback(){
-      render() //render
-      requestAnimationFrame(callback) //call self in next frame
+    const render = sakura(canvas) as () => void
+
+    if(render) {
+      //creat animation callback
+      function callback(){
+        render() //render
+        requestAnimationFrame(callback) //call self in next frame
+      }
+
+      callback()
     }
-    callback()
