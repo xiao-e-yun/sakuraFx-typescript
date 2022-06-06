@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: url(https://static.xiaoeyun.me/img/background.webp) #000;
   overflow: hidden;
   margin: 0;
 }
@@ -62,4 +62,15 @@ main {
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+.background-authorize {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  font-size: 1.1rem;
+  right: .2em;
+  text-decoration: none;
+  color: rgb(255,190,190);
+  text-shadow: 0 0 .5em rgb(255,190,190);
 }
