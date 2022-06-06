@@ -11,7 +11,9 @@ body {
 }
 
 .title {
-  z-index: 1;
+  overflow: hidden;
+  padding: .1em .2em;
+  z-index: 2;
   color: rgb(255, 190, 190);
   text-decoration: none;
   position: fixed;
@@ -39,6 +41,7 @@ main {
 .card {
   margin: 1em;
   width: 100%;
+  z-index: 1;
   padding: 1em;
   overflow: hidden;
   background-color: rgba(50,50,50,.8);
@@ -67,7 +70,6 @@ main {
 .background-authorize {
   position: fixed;
   bottom: 0;
-  z-index: -1;
   font-size: 1.1rem;
   right: .2em;
   text-decoration: none;
