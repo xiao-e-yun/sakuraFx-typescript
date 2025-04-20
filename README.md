@@ -7,30 +7,31 @@ fork from [gryng02](https://qiita.com/gryng02)
 Install `pnpm add -D sakurafx-typescript`
 
 In html
-
-    <canvas id="sakura"></canvas>
- 
+```html
+<canvas id="sakura"></canvas>
+```
 In TypeScript
+```typescript
+//import
+import sakura from "sakurafx-typescript";
 
-    //import
-    import sakura from "sakurafx-typescript";
+//get canvas
+const canvas = document.getElementById("sakura") as HTMLCanvasElement
 
-    //get canvas
-    const canvas = document.getElementById("sakura") as HTMLCanvasElement
+//set canvas size
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-    //set canvas size
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+//initialization and get render
+const render = sakura(canvas) as () => void
 
-    //initialization and get render
-    const render = sakura(canvas) as () => void
+if(render) {
+  //creat animation callback
+  function callback(){
+    render() //render
+    requestAnimationFrame(callback) //call self in next frame
+  }
 
-    if(render) {
-      //creat animation callback
-      function callback(){
-        render() //render
-        requestAnimationFrame(callback) //call self in next frame
-      }
-
-      callback()
-    }
+  callback()
+}
+```
